@@ -1,0 +1,17 @@
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets/styling/app.buttons.scss';
+
+.btn-submit {
+    float: right;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+nz-card {
+    padding-left: 62px;
+}
+
+.container {
+    width: 970px !important;
+    height: 600px;
+    margin: auto;
+}

@@ -1,0 +1,20 @@
+@import '../../../../assets/styling/app.buttons.scss';
+
+.btn-upload-excel {
+    @include btn-upload-excel();
+}
+.description {
+    color: $error;
+}
+button {
+    border: none !important;
+}
+
+.btn-ok {
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+.btn-group {
+    float: right;
+    margin-top: 50px;
+}

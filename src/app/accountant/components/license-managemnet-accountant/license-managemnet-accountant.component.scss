@@ -1,0 +1,57 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.btn-add-new-user {
+    margin-left: 196px;
+    height: 43px !important;
+    border: none;
+}
+
+.btn-view {
+    width: 100% !important;
+    height: 43px !important;
+    border: none !important;
+}
+
+.btn-group-filter button {
+    border: none !important;
+    height: 43px !important;
+    float: right;
+    background-color: $filter-button !important;
+    color: $primary-color-four;
+}
+
+td {
+    color: $primary-color-four !important;
+    font-weight: normal;
+}
+
+th {
+    color: $primary-color-four !important;
+    font-weight: normal;
+}
+h2 {
+    margin-top: 12px;
+}
+
+nz-card {
+    margin-top: 20px;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .table-container {
+        margin-left: -263px;
+    }
+    .btn-group-filter button {
+        width: 100px !important;
+    }
+    .btn-group-filter {
+        margin-left: 5px;
+    }
+    .container {
+        float: right;
+    }
+    .btn-add-new-user {
+        float: right;
+    }
+}

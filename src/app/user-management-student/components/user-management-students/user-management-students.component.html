@@ -1,0 +1,14 @@
+<app-arrow-back [title]="'Students'" [routerLink]="'/dashboard/landing-view'"></app-arrow-back>
+<div class="btn-group">
+  <button nz-button [nzType]="'primary'" (click)="excel()" class="btn-upload-excel">UPLOAD EXCEL SPREAD SHEET</button>
+  <nz-modal [(nzVisible)]="isVisible" nzTitle="Notification">
+    <ng-container *nzModalContent>
+      <p>Please be advised that editing this template will result to the data not being upload corretly</p>
+      <p>When uploading the list, make sure it has the flowing information</p>
+      <p class="description">Identity Number, Full Name, Email Address and Grade</p>
+      <button nz-button [nzType]="'primary'" (click)='handleOk()' class="btn-ok">OK</button>
+    </ng-container>
+  </nz-modal>
+  <button nz-button [nzType]="'primary'" routerLink="/dashboard/add-new-student" class="btn-new-student"> ADD NEW STUDENT</button>
+</div>
+<app-user-management-teacher-table btnView="btn-user-view"></app-user-management-teacher-table>

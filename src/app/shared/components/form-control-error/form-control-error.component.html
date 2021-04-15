@@ -1,0 +1,34 @@
+<div *ngIf="(control?.touched || control?.dirty ||control?.dirty || submitting) && control?.errors" class="has-error">
+  <ng-container *ngIf="control?.hasError('required')">
+    &#183;&nbsp;The {{label}} is required.<br>
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('maxlength')">
+    &#183;&nbsp;The {{label}} cannot be longer than characters.<br>
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('minlength')">
+    &#183;&nbsp;The {{label}} cannot be shorter than characters.<br>
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('validEmail')">
+    &#183;&nbsp;The {{label}} is not a valid email address.<br>
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('validPhoneNumber')">
+    &#183;&nbsp;The {{label}} is not a valid phone number.<br>
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('validUsername')">
+    &#183;&nbsp;The {{label}} is not a valid username.
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('validPassword')">
+    &#183;&nbsp;Please ensure you have at least 1 uppercase and numeric value.<br>
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('matchPassword')">
+    &#183;&nbsp;The {{label}} does not match the password entered.<br>
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('validPercentage')">
+    &#183;&nbsp;The {{label}} is not a valid percentage. Must be a valid number and must be between a range of 0 -
+    100.<br>
+  </ng-container>
+  <ng-container *ngIf="control?.hasError('validIdentificationNumber')">
+    &#183;&nbsp;The {{label}} is not a valid identification number.<br>
+  </ng-container>
+
+</div>

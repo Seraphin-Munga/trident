@@ -1,0 +1,70 @@
+@import '../../../../assets/styling/app.font.scss';
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.table {
+    width: 60% !important;
+}
+
+h2 {
+    float: left;
+    margin-top: 20px;
+}
+
+td,
+th {
+    border: none !important;
+    color: $primary-color-four;
+    font-weight: 500;
+}
+
+.institution-name {
+    text-align: right;
+}
+
+h4 {
+    font-size: 15px;
+    color: $primary-color-four;
+}
+
+.btn-wrapper-payment {
+    margin-top: 80px;
+}
+
+.btn-primary-payment {
+    margin-left: 27vw;
+    width: 182px;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+.btn-default-payment {
+    width: 182px;
+    height: 43px;
+    border-radius: 22px;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .btn-primary-payment {
+        margin-right: 0;
+        margin-left: 60px;
+        width: 100px !important;
+    }
+    .btn-default-payment {
+        width: 100px !important;
+    }
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .btn-primary-payment {
+        margin-right: 0;
+        margin-left: 60px;
+        width: 100px !important;
+    }
+    .btn-default-payment {
+        width: 140px !important;
+    }
+    .container-package {
+        margin-right: 96px;
+    }
+}

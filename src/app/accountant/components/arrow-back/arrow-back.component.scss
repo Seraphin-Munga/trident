@@ -1,0 +1,18 @@
+@import '../../../../assets//styling/app.sizes.scss';
+
+strong {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+img {
+    padding-right: 23px;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .icon-back {
+        margin-left: -198px;
+        margin-bottom: 45px;
+    }
+}

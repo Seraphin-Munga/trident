@@ -1,0 +1,59 @@
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+.title-summary {
+    color: $primary-color-two;
+    padding-top: 10px;
+}
+
+td {
+    color: $primary-color-two;
+    font-size: 11px;
+}
+
+.table {
+    width: 100% !important;
+}
+.short-description {
+    border-radius: 8px;
+    background-color: $primary-color-two;
+    margin-top: 20px;
+    padding: 11px;
+}
+p {
+    font-size: 10px;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+h1 {
+    color: $primary-color-two;
+}
+.price {
+    float: right;
+}
+.container {
+    background-color: $primary-color-three !important;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    margin-left: 86px;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .container {
+        width: 370px;
+        position: relative;
+        margin-left: -231px !important;
+        margin-left: 0;
+        margin-top: 152px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        margin-left: -193px !important;
+    }
+}

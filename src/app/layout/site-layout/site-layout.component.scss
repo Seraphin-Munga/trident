@@ -1,0 +1,13 @@
+@import '../../../assets/styling/app.sizes.scss';
+@import '../../../assets/styling/app.colors.scss';
+
+nz-layout {
+    min-height: 100vh;
+    background-color: #fff;
+    nz-content {
+        @media (max-width: $phone-landscape-breakpoint) {
+            padding: 0;
+            margin-top: 0;
+        }
+    }
+}

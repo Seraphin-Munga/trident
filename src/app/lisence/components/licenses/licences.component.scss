@@ -1,0 +1,25 @@
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.licence-box {
+    background-color: $primary-color-two;
+    margin-top: 40px;
+    padding-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+span {
+    font-size: 26px;
+    color: $primary-color-four;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .container {
+        float: right;
+    }
+}

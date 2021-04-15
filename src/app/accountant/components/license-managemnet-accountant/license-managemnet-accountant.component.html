@@ -1,0 +1,60 @@
+<div nz-row class="container">
+    <div nz-col>
+       <h2>Licenses Management</h2>
+    </div>
+    <div nz-col [nzSpan]="6" nzOffset="8">
+        <button nz-button [nzType]="'primary'" routerLink="/accountant/add-new-user" class="btn-add-new-user">ADD NEW
+            USER</button>
+    </div>
+</div>
+<div nz-row nzJustify="space-around" nzAlign="middle" class="table-container">
+    <nz-card nz-col nzSpan="24">
+        <div nz-row>
+            <div nz-col nzSpan="8">
+                <h2>List of Institutions</h2>
+            </div>
+            <div nz-col nzSpan="8">
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Please input your username!">
+                        <input type="text" placeholder="Search by" />
+                    </nz-form-control>
+                </nz-form-item>
+            </div>
+            <div nz-col nzSpan="8" class="btn-group-filter">
+
+                <nz-form-item>
+                    <nz-form-control>
+                        <button nz-button (click)="filter()" [nzType]="'primary'">FILTER BY</button>
+                    </nz-form-control>
+                </nz-form-item>
+            </div>
+          </div>
+        <nz-table #rowSelectionTable [nzScroll]="{ x: '920px' }" nzShowSizeChanger [nzData]="listOfData"
+            (nzCurrentPageDataChange)="onCurrentPageDataChange($event)">
+            <thead>
+                <tr>
+                    <th [nzSelections]="listOfSelection" [(nzChecked)]="checked" [nzIndeterminate]="indeterminate"
+                        (nzCheckedChange)="onAllChecked($event)"></th>
+                    <th>Name of Institution</th>
+                    <th>Institution Type</th>
+                    <th>Product</th>
+                    <th>Status</th>
+                    <th>Range</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of rowSelectionTable.data">
+                    <td [nzChecked]="setOfCheckedId.has(data.id)" (nzCheckedChange)="onItemChecked(data.id, $event)">
+                    </td>
+                    <td>{{ data.nameOfInstitution }}</td>
+                    <td>{{ data.institutionType }}</td>
+                    <td>{{ data.product }}</td>
+                    <td>{{ data.status }}</td>
+                    <td>{{ data.range }}</td>
+                    <td> <button class="btn-view" nz-button [nzType]="'primary'">ACTIVATE LICENSE</button></td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </nz-card>
+</div>

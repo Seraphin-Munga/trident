@@ -1,0 +1,47 @@
+<div nz-row nzJustify="space-around" nzAlign="middle" nzType="flex" class="table-container">
+  <nz-card nz-col nzSpan="24">
+    <div nz-row>
+      <div nz-col nzSpan="16">
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your username!">
+            <input type="text" placeholder="Search by" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div nz-col nzSpan="8" class="btn-group-filter">
+        <nz-form-item>
+          <nz-form-control>
+            <button nz-button class="btn-filter" (click)="filter()" [nzType]="'primary'">FILTER BY</button>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </div>
+    <nz-table #rowSelectionTable [nzScroll]="{ x: '920px' }" nzShowSizeChanger [nzData]="listOfData"
+      (nzCurrentPageDataChange)="onCurrentPageDataChange($event)">
+      <thead>
+        <tr>
+          <th [nzSelections]="listOfSelection" [(nzChecked)]="checked" [nzIndeterminate]="indeterminate"
+            (nzCheckedChange)="onAllChecked($event)"></th>
+          <th>Licences ID</th>
+          <th>Identity Number</th>
+          <th>Full Name</th>
+          <th>Email Address</th>
+          <th class="grade">Grade</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of rowSelectionTable.data">
+          <td [nzChecked]="setOfCheckedId.has(data.id)" (nzCheckedChange)="onItemChecked(data.id, $event)"></td>
+          <td>{{ data.licences }}</td>
+          <td>{{ data.idNo }}</td>
+          <td>{{ data.fullName }}</td>
+          <td>{{ data.emailAddress }}</td>
+          <td class="grade">{{ data.grade }}</td>
+          <td> <button class="btn-view" [routerLink]="['/dashboard/teacher-profile/', data.id]" [class]="btnView" nz-button
+              [nzType]="'primary'">View</button></td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-card>
+</div>

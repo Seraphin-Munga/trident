@@ -1,0 +1,125 @@
+@import '../../../assets/styling/app.colors.scss';
+@import '../../../assets//styling/app.sizes.scss';
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-top: 20px;
+    cursor: pointer;
+    color: $primary-color-two;
+}
+
+span.active {
+    color: $primary-color-one !important;
+}
+span {
+    font-size: 13px;
+}
+
+nz-layout {
+    min-height: 100vh;
+}
+
+nz-sider {
+    position: fixed;
+    border-style: solid;
+    border-right-color: $primary-color-one;
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    width: 450px;
+    background-color: $primary-color-three;
+
+    .avatar {
+        margin: 10px;
+        width: 279px;
+        height: 80px;
+    }
+    .img-logo {
+        height: 39px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+}
+nz-header {
+    background: $dashboard-header;
+}
+
+nz-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.menu {
+    float: right !important;
+    line-height: 49px !important;
+    margin-top: 10px;
+}
+
+.profile-menu {
+    float: right !important;
+    line-height: 49px !important;
+    margin-right: 250px;
+    margin-top: 10px;
+}
+.profile-menu strong {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.menu strong {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+img {
+    position: absolute;
+}
+
+.user-icon {
+    margin-left: 9px;
+}
+
+.menu:first-child {
+    cursor: pointer !important;
+}
+
+.menu:last-child {
+    padding-right: 50px;
+}
+
+.full-name {
+    margin-left: 70px !important;
+}
+
+.trident-logo {
+    width: 143px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.britannica-logo {
+    margin-left: 161px;
+    margin-top: 15px;
+    width: 120px;
+}
+
+.user-icon-logo {
+    margin-left: 20px !important;
+    margin-top: 20px !important;
+}
+
+.profile-name {
+    color: $primary-color-two;
+    margin-left: 89px;
+    margin-top: 23px;
+}
+
+.vertical-line {
+    border-left: 4px solid $primary-color-one;
+    height: 100%;
+    float: right;
+    margin-right: 7px;
+}

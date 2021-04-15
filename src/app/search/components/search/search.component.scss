@@ -1,0 +1,35 @@
+@import '../../../../assets/styling/app.colors.scss';
+
+img {
+    height: 16rem;
+}
+
+.gutter {
+    margin-left: 40px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.britannica-logo {
+    margin-top: 12px;
+    img {
+        height: 24px;
+    }
+}
+
+h4 {
+    color: $primary-color-four;
+}
+
+.description {
+    margin-top: 98px;
+}
+
+.britannica-video {
+    margin-top: 80px;
+    img {
+        width: 700px;
+    }
+}

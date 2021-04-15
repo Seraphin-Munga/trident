@@ -1,0 +1,48 @@
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets/styling/app.buttons.scss';
+
+button {
+    border: none !important;
+    height: 43px !important;
+    width: 190px !important;
+}
+
+nz-card {
+    padding-left: 62px;
+    margin-top: 40px;
+}
+
+span {
+    width: 205px;
+}
+
+.container {
+    width: 970px !important;
+    margin: auto;
+}
+.btn-group {
+    float: right;
+}
+
+strong {
+    padding-right: 55px;
+}
+
+.btn-manage-payment {
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+.btn-view {
+    width: 100% !important;
+    border: none !important;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+td {
+    color: $primary-color-four !important;
+    font-weight: normal;
+}
+
+th {
+    color: $primary-color-four !important;
+    font-weight: normal;
+}

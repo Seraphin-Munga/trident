@@ -1,0 +1,15 @@
+<div nz-row nzJustify="space-around" nzAlign="middle" nzType="flex">
+    <div nz-col [nzSpan]="6" *ngFor="let data of summary">
+        <div class="inner-box">
+            <h1>{{data.title}}</h1>
+            <span>{{data.subTitle}}</span>
+             <p>{{data.price}}</p>
+        </div>
+    </div>
+    <div nz-col [nzSpan]="6" *ngFor="let data of summary">
+        <div class="inner-box">
+            <h1>{{data.title}}</h1>
+            <h2>{{data.total}}</h2>
+        </div>
+    </div>
+</div>

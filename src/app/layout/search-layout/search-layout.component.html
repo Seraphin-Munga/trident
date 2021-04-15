@@ -1,0 +1,24 @@
+<nz-layout>
+  <div nz-row>
+    <div nz-col nzSpan="8">
+      <div class="logo"><img routerLink="/" class="img-logo" src="../../../assets/logos/search.png" alt="logo" />
+      </div>
+    </div>
+    <div nz-col nzSpan="8" nzOffset="8">
+      <div class="menu">
+        <div class="search-portal">
+          <strong>Search Portal</strong>
+          <span routerLink="/dashboard/landing-view">Management</span>
+          <img src="../../../assets/icons/Line.svg" />
+          <img src="../../../assets/icons/User.svg" class="user-icon" />
+            <div class="full-name">
+              <span routerLink="/profile/user-profile">{{fullName}} <p>{{userType}}</p></span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nz-content>
+    <router-outlet></router-outlet>
+  </nz-content>
+</nz-layout>

@@ -1,0 +1,33 @@
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.inner-box {
+    width: 235px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: $primary-color-two;
+}
+
+h1 {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 13px;
+}
+
+h2 {
+    color: $primary-color-four;
+    padding-left: 20px;
+}
+
+span {
+    color: $primary-color-four;
+    padding-left: 20px;
+}
+
+p {
+    color: $price-report;
+    padding-left: 20px;
+    font-size: 40px;
+}

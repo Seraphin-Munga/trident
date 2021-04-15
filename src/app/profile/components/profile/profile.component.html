@@ -1,0 +1,45 @@
+<div nz-row nzJustify="space-around" nzAlign="middle" nzType="flex" class="container">
+    <nz-card nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="24" >
+      <h1>Profile</h1>
+      <form nz-form [formGroup]="form">
+        <div nz-row>
+          <div nz-col nzSpan="10">
+            <nz-form-item>
+              <nz-form-control>
+                <nz-form-label nzFor="identity Number">Identity Number</nz-form-label>
+                <input type="text" formControlName="identityNumber" class="teacher-input" placeholder="Identity Number" />
+                <app-form-control-error [control]="form.get('identityNumber')" [submitting]="saving"
+                  label="Identity Number">
+                </app-form-control-error>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+                <nz-form-control>
+                  <nz-form-label nzFor="fullName">Full Name</nz-form-label>
+                  <input type="text" formControlName="fullName" class="teacher-input" placeholder="Full Name" />
+                  <app-form-control-error [control]="form.get('fullName')" [submitting]="saving" label="Full Name">
+                  </app-form-control-error>
+                </nz-form-control>
+              </nz-form-item>
+          </div>
+          <div nz-col nzSpan="10" nzOffset="1">
+            <nz-form-item>
+              <nz-form-control>
+                <nz-form-label nzFor="emailAddress">Email Address</nz-form-label>
+                <input type="text" formControlName="emailAddress" class="teacher-input" placeholder="Email Address" />
+                <app-form-control-error [control]="form.get('emailAddress')" [submitting]="saving" label="Email Address">
+                </app-form-control-error>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+        <div nz-col nzSpan="8" nzOffset="13">
+          <nz-form-item>
+            <nz-form-control>
+              <button nz-button class="btn-submit" (click)="save()" [nzType]="'primary'">SAVE</button>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+      </form>
+    </nz-card >
+  </div>

@@ -1,0 +1,57 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.teacher-title {
+    margin-left: 50px;
+}
+
+.btn-submit {
+    float: right;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+.btn-deactivate-account {
+    border: none;
+    float: right;
+}
+.btn-download {
+    border: none;
+    background-color: $primary-color-one !important;
+    color: $primary-color-three;
+    width: 346px !important;
+    margin-right: 20px;
+}
+
+.btn-group {
+    padding-top: 30px;
+    float: right;
+}
+
+button {
+    border: none;
+}
+
+.inner-container {
+    padding-left: 100px;
+}
+.container {
+    background-color: $primary-color-two;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .container {
+        width: 347px !important;
+        margin-left: -245px;
+    }
+    .btn-deactivate-account {
+        margin-right: 20px;
+    }
+
+    .btn-group {
+        margin-right: -23px;
+    }
+
+    .inner-container {
+        padding-left: 0;
+    }
+}

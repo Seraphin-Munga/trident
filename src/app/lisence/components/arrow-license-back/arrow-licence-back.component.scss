@@ -1,0 +1,25 @@
+@import '../../../../../src/assets/styling/app.input.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+.icon-back {
+    font-size: 30px;
+}
+.icon-back strong {
+    padding-left: 50px;
+}
+.icon-back p {
+    font-size: 15px;
+    padding-left: 80px;
+    padding-top: 10px;
+    color: $primary-color-four;
+    font-weight: 'Montserrat';
+}
+img {
+    cursor: pointer;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .icon-back {
+        margin-left: -198px;
+        margin-bottom: 45px;
+    }
+}

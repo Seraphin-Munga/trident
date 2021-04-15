@@ -1,0 +1,35 @@
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+strong {
+    font-size: 20px;
+}
+
+img {
+    cursor: pointer;
+    height: 25rem;
+}
+
+.container-box {
+    margin-top: 40px;
+}
+
+p {
+    font-weight: normal;
+    color: $primary-color-four;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    img {
+        height: 177px;
+        margin-left: -161px;
+    }
+    .student {
+        margin-top: 187px;
+        margin-left: -38px;
+    }
+
+    .user-title {
+        margin-left: -177px;
+    }
+}

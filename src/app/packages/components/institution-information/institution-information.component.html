@@ -1,0 +1,286 @@
+<app-steps [backgroundImage]="'../../../../assets/header-imgs/Mask Group 5.png'" [current]="1"></app-steps>
+<div nz-row nzJustify="space-around" nzAlign="middle" nzType="flex" class="container-package">
+  <div nz-col [nzXs]="{ span: 20}" [nzLg]="{ span: 20}">
+    <div class="second-form-title">
+      <h1>Institution Information</h1>
+      <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua.</h4>
+    </div>
+    <form [formGroup]="form">
+      <div nz-row>
+        <div nz-col nzSpan="16">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="email">Name of Institution</nz-form-label>
+              <input type="text" formControlName="nameOfInstitution" class="Institution-input"
+                placeholder="Name of Institution" />
+              <app-form-control-error [control]="form.get('nameOfInstitution')" [submitting]="saving"
+                label="Name of Institution">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+        <div nz-col nzSpan="8" class="order-summary">
+          <app-ordersummary></app-ordersummary>
+        </div>
+      </div>
+      <div nz-row>
+        <div nz-col nzSpan="8">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="regNo">Reg no (if applicable)</nz-form-label>
+              <input type="text" formControlName="regNo" class="contact-input" placeholder="Reg no" />
+            </nz-form-control>
+            <app-form-control-error [control]="form.get('regNo')" [submitting]="saving" label="Reg no">
+            </app-form-control-error>
+          </nz-form-item>
+        </div>
+        <div nz-col nzSpan="8" nzOffset="1">
+          <nz-radio-group formControlName="institutionType">
+            <nz-form-label nzFor="email">Institution Type</nz-form-label>
+            <label nz-radio nzValue="Primary School">Primary School</label>
+            <label nz-radio nzValue="High School">High School</label>
+            <label nz-radio nzValue="College">College</label>
+            <label nz-radio nzValue="University">University</label>
+            <label nz-radio nzValue="M">Other <input type="text" class="contact-input" nz-input
+                *ngIf="institutionType === 'M'" /></label>
+          </nz-radio-group>
+        </div>
+      </div>
+      <div nz-row>
+        <div nz-col nzSpan="8">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="physicalAddress">Physical Address</nz-form-label>
+              <textarea rows="4" nz-input formControlName="physicalAddress" class="contact-input"
+                placeholder="Physical Address"></textarea>
+              <app-form-control-error [control]="form.get('physicalAddress')" [submitting]="saving"
+                label="Physical Address">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="regNo">Province</nz-form-label>
+              <input type="text" formControlName="province" class="contact-input" placeholder="Province" />
+            </nz-form-control>
+            <app-form-control-error [control]="form.get('province')" [submitting]="saving" label="Province">
+            </app-form-control-error>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="regNo">City</nz-form-label>
+              <input type="text" formControlName="city" class="contact-input" placeholder="City" />
+            </nz-form-control>
+            <app-form-control-error [control]="form.get('city')" [submitting]="saving" label="City">
+            </app-form-control-error>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="regNo">Postal Code</nz-form-label>
+              <input type="text" formControlName="postalCode" class="contact-input" placeholder="Postal Code" />
+            </nz-form-control>
+            <app-form-control-error [control]="form.get('postalCode')" [submitting]="saving" label="Postal Code">
+            </app-form-control-error>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="country">Country</nz-form-label>
+              <select name="" id="" class="contact-input" formControlName="country">
+                <option value="South Africa">South Africa</option>
+              </select>
+              <app-form-control-error [control]="form.get('country')" [submitting]="saving" label="Country">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+
+        </div>
+        <div nz-col nzSpan="8" nzOffset="1">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label class="form-label-address-one" nzFor="postalAddress">Postal Address</nz-form-label>
+              <textarea rows="4" nz-input formControlName="postalAddress" class="contact-input"
+                placeholder="Postal Address"></textarea>
+              <app-form-control-error [control]="form.get('postalAddress')" [submitting]="saving"
+                label="Postal Address">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+
+
+
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="regNo">Province</nz-form-label>
+              <input type="text" formControlName="shpProvince" class="contact-input" placeholder="shpProvince" />
+            </nz-form-control>
+            <app-form-control-error [control]="form.get('shpProvince')" [submitting]="saving" label="shpProvince">
+            </app-form-control-error>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="regNo">shpCity</nz-form-label>
+              <input type="text" formControlName="shpCity" class="contact-input" placeholder="shpCity" />
+            </nz-form-control>
+            <app-form-control-error [control]="form.get('shpCity')" [submitting]="saving" label="shpCity">
+            </app-form-control-error>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="regNo">Postal Code</nz-form-label>
+              <input type="text" formControlName="shpPostalCode" class="contact-input" placeholder="shpPostalCode" />
+            </nz-form-control>
+            <app-form-control-error [control]="form.get('shpPostalCode')" [submitting]="saving" label="shpPostalCode">
+            </app-form-control-error>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="country">Country</nz-form-label>
+              <select name="" id="" class="contact-input" formControlName="shpCountry">
+                <option value="South Africa">South Africa</option>
+              </select>
+              <app-form-control-error [control]="form.get('shpCountry')" [submitting]="saving" label="shpCountry">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+
+
+
+        </div>
+      </div>
+      <div class="wrapper-checkbox">
+        <label class="checkbox-input" nz-checkbox></label> Postal Address same as
+        the
+        Physical Address
+      </div>
+      <div class="contact-title">
+        <h1>Contact Information</h1>
+        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+          labore et
+          dolore magna aliquyam erat, sed diam voluptua.</h4>
+      </div>
+      <div nz-row>
+        <div nz-col nzSpan="8">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="contactPerson">Contact Person</nz-form-label>
+              <input type="text" formControlName="contactPerson" class="contact-input" placeholder="Contact Person" />
+              <app-form-control-error [control]="form.get('contactPerson')" [submitting]="saving"
+                label="Contact Person">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="landlineNumber">Landline Number</nz-form-label>
+              <input type="text" formControlName="landlineNumber" class="contact-input" placeholder="Landline Number" />
+              <app-form-control-error [control]="form.get('landlineNumber')" [submitting]="saving"
+                label="Landline Number">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+        <div nz-col nzSpan="8" nzOffset="1">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="emailAddress">Email Address</nz-form-label>
+              <input type="text" formControlName="emailAddress" class="contact-input" placeholder="Email Address" />
+              <app-form-control-error [control]="form.get('emailAddress')" [submitting]="saving" label="Email Address">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="mobileNumber">Mobile Number</nz-form-label>
+              <input type="text" formControlName="mobileNumber" class="contact-input" placeholder="Mobile Numbe" />
+              <app-form-control-error [control]="form.get('mobileNumber')" [submitting]="saving" label="Mobile Number">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+      </div>
+
+      <div class="contact-title">
+        <h1>Super Admin Information</h1>
+      </div>
+      <div nz-row>
+        <div nz-col nzSpan="8">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="superAdminOneEmailAddress">Super Admin 1 Email Address</nz-form-label>
+              <input type="email" formControlName="superAdminOneEmailAddress"
+                placeholder="Super Admin 1 Email Address" />
+              <app-form-control-error [control]="form.get('superAdminOneEmailAddress')" [submitting]="saving"
+                label="Super Admin 1 Email Address">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+        <div nz-col nzSpan="8" nzOffset="1">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-form-label nzFor="superAdminTwoEmailAddress">Super Admin 2 Email Address</nz-form-label>
+              <input type="email" formControlName="superAdminTwoEmailAddress"
+                placeholder="Super Admin 2 Email Address" />
+              <app-form-control-error [control]="form.get('superAdminTwoEmailAddress')" [submitting]="saving"
+                label="Super Admin 2 Email Address">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+      </div>
+
+      <div nz-row>
+
+        <nz-form-item>
+          <nz-form-control>
+            <label formControlName="acceptedTerms" class="checkobox-input" nz-checkbox></label> I read and agree to the
+            <span>Terms</span> and <span routerLink="/package/terms-and-conditions"> Learning
+              Subscription License Agreement Policy.</span>
+            <app-form-control-error [control]="form.get('acceptedTerms')" [submitting]="saving" label="acceptedTerms">
+            </app-form-control-error>
+          </nz-form-control>
+        </nz-form-item>
+
+
+      </div>
+
+      <div class="paragraph">
+        <p>This Order Form forms an integral part of the Digital Learning Subscription License Agreement (the
+          “License
+          Terms and Conditions”) set out hereafter and also located at
+          https://corporate.britannica.com/legal/institutional-SA.<br> The representative of the Institution who
+          signs
+          this order form on behalf of the Institution confirms and acknowledges that: i) he/she has read and
+          understand attached License Terms and Conditions
+          (https://corporate.britannica.com/legal/institutional-SA);
+          ii) that <br> he/she is authorised to sign this Order Form on behalf of the Institution; and iii) that
+          the
+          Institution will be bound by the License Terms and Conditions.</p>
+      </div>
+      <div nz-row class="btn-wrapper">
+        <div nz-col nzSpan="8">
+          <nz-form-item>
+            <nz-form-control>
+              <button nz-button routerLink="/" class="btn-btn-default">BACK</button>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+        <div nz-col nzSpan="8" nzOffset="8">
+          <nz-form-item>
+            <nz-form-control>
+              <button nz-button (click)="next()" class="btn-primary">NEXT</button>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

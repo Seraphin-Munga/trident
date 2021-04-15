@@ -1,0 +1,84 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+nz-table {
+    padding-top: 20px;
+    margin-bottom: 150px;
+}
+
+.btn-select {
+    width: 182px;
+    float: right;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+td {
+    text-align: left;
+    color: $primary-color-four;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.table-header {
+    color: $primary-color-three;
+    height: 10px !important;
+    text-align: left !important;
+    background-color: $primary-color-one !important;
+}
+
+th {
+    background-color: $primary-color-three !important;
+    color: $primary-color-two !important;
+}
+
+h1 {
+    font-size: 30px;
+    color: $primary-color-three;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 15px;
+    color: $primary-color-four;
+    font-weight: 400;
+}
+
+li {
+    color: $primary-color-four;
+}
+
+.container-summary {
+    margin-top: -100px;
+    margin-bottom: 150px;
+}
+
+.inner-summary {
+    margin-left: -29px;
+}
+.price {
+    text-align: right;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .inner-container {
+        max-width: 80% !important;
+    }
+}
+@media (max-width: $phone-landscape-breakpoint) {
+    .container {
+        margin-top: 34px;
+    }
+    .inner-container {
+        max-width: 80% !important;
+    }
+    nz-table {
+        max-width: 80% !important;
+    }
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .inner-container {
+        max-width: 80% !important;
+    }
+}

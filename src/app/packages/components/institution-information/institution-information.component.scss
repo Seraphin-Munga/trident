@@ -1,0 +1,77 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.second-form-title h1 {
+    color: $primary-color-three;
+    font-weight: 500;
+}
+
+.second-form-title h4 {
+    color: $primary-color-four;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+nz-checkbox {
+    width: 30px;
+    height: 75px;
+}
+
+.wrapper-checkbox {
+    padding-top: 20px;
+}
+
+.contact-title {
+    padding-top: 50px;
+}
+
+.contact-title h4 {
+    font-size: 15px;
+    color: $primary-color-four;
+    font-weight: 400;
+}
+
+p {
+    color: $primary-color-four;
+    font-weight: 400;
+}
+
+.paragraph {
+    padding-top: 20px;
+}
+
+.btn-wrapper {
+    margin: 100px 0;
+    padding-bottom: 100px;
+}
+
+.btn-primary {
+    width: 182px;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+.btn-btn-default {
+    width: 182px;
+    height: 43px;
+    border-radius: 22px;
+}
+[nz-radio] {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+}
+
+span {
+    color: $primary-color-one;
+    cursor: pointer;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .btn-primary {
+        width: 126px !important;
+    }
+
+    .btn-btn-default {
+        width: 126px !important;
+    }
+}

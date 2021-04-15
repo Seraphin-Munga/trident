@@ -1,0 +1,16 @@
+@import '../../../../assets//styling/app.sizes.scss';
+
+.btn-add-new-user {
+    margin-left: 61px;
+    height: 43px !important;
+    border: none;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .container {
+        float: right;
+    }
+    .btn-add-new-user {
+        float: right;
+    }
+}

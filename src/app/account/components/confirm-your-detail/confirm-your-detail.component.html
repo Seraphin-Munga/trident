@@ -1,0 +1,77 @@
+
+<div nz-row nzJustify="space-around" nzAlign="middle" nzType="flex">
+    <div nz-col nzXs="20" nzLg="8" class="inner-container">
+      <h1>Confirm your Details</h1>
+      <form nz-form [formGroup]="form">
+        <div nz-row>
+          <div nz-col nzSpan="24">
+            <nz-form-item>
+              <nz-form-control>
+                <nz-form-label nzFor="email">Name</nz-form-label>
+                <input type="text" formControlName="name"  placeholder="Name" />
+                <app-form-control-error [control]="form.get('name')" [submitting]="saving" label="Name">
+                </app-form-control-error>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-control>
+                <nz-form-label nzFor="password">Surname</nz-form-label>
+                <input type="text" formControlName="surname"  placeholder="Name" />
+                <app-form-control-error [control]="form.get('surname')" [submitting]="saving" label="Surname">
+                </app-form-control-error>
+              </nz-form-control>
+            </nz-form-item>
+
+            <nz-form-item>
+                <nz-form-control>
+                  <nz-form-label nzFor="password">ID No</nz-form-label>
+                  <input type="number" formControlName="idNo"  placeholder="ID No" />
+                  <app-form-control-error [control]="form.get('idNo')" [submitting]="saving" label="ID No">
+                  </app-form-control-error>
+                </nz-form-control>
+              </nz-form-item>
+
+
+              <nz-form-item>
+                <nz-form-control >
+                  <nz-form-label nzFor="Grade">Grade</nz-form-label>
+                  <select name="" id="" formControlName="grade">
+                    <option></option>
+                  </select>
+                  <app-form-control-error [control]="form.get('grade')" [submitting]="saving" label="Grade">
+                  </app-form-control-error>
+                </nz-form-control>
+              </nz-form-item>
+
+  
+              <nz-form-item>
+                <nz-form-control>
+                  <nz-form-label nzFor="password">Password</nz-form-label>
+                  <input type="password" formControlName="password"  placeholder="Password" />
+                  <app-form-control-error [control]="form.get('password')" [submitting]="saving" label="Password">
+                  </app-form-control-error>
+                </nz-form-control>
+              </nz-form-item>
+
+              <nz-form-item>
+                <nz-form-control>
+                  <nz-form-label nzFor="confirmationPassword">Confirm Password</nz-form-label>
+                  <input type="password" formControlName="confirmationPassword"  placeholder="Confirm Password" />
+                  <app-form-control-error [control]="form.get('confirmationPassword')" [submitting]="saving" label="Confirm Password">
+                  </app-form-control-error>
+                </nz-form-control>
+              </nz-form-item>
+
+          </div>
+        </div>
+        <div nz-col >
+          <nz-form-item>
+            <nz-form-control>
+              <button nz-button class="confirm-btn" (click)="confirm()" [nzType]="'primary'">CONFIRM</button>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+      </form>
+    </div>
+  </div>
+  

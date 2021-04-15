@@ -1,0 +1,24 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.btn-submit {
+    float: right;
+    margin-right: 33px;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+.container {
+    background-color: $primary-color-two;
+}
+
+.inner-container {
+    padding-left: 80px;
+    padding-top: 23px;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .container {
+        width: 347px !important;
+        margin-left: -245px;
+    }
+}

@@ -1,0 +1,26 @@
+<app-arrow-back [title]="'Students'" [routerLink]="'/dashboard/user-management-students'"></app-arrow-back>
+
+<div class="container">
+  <h1>Add new students</h1>
+  <!-- (nzChange)="handleChange($event)" -->
+  <nz-upload nzType="drag" nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76">
+    <p class="ant-upload-drag-icon">
+      <i nz-icon nzType="inbox"></i>
+    </p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="162" height="162" viewBox="0 0 162 162"><defs><style>.a{fill:none;stroke:#ffcc45;stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;}</style></defs><g transform="translate(0.5 0.5)"><path class="a" d="M156.5,22.5V56.278a16.889,16.889,0,0,1-16.889,16.889H21.389A16.889,16.889,0,0,1,4.5,56.278V22.5" transform="translate(0 83.333)"/><path class="a" d="M94.944,46.722,52.722,4.5,10.5,46.722" transform="translate(27.778)"/><path class="a" d="M18,4.5V105.833" transform="translate(62.5)"/></g></svg>
+    <!-- <img src="../../../../assets/icons/Icon-upload.svg" alt=""> -->
+    <p class="ant-upload-hint">
+      Drop or upload your class list.
+    </p>
+    <span>File type .xlsx</span>
+  </nz-upload>
+  <div class="uploaded-file">
+    <h1>Uploaded File</h1>
+    <img src="../../../../assets/icons/Icon-file-excel.svg" alt="">
+    <div class="progress-bar">
+      <nz-progress [nzPercent]="75"></nz-progress>
+    </div>
+  </div>
+  <button nz-button class="btn-submit" [nzType]="'primary'">SUBMIT</button>
+</div>
+

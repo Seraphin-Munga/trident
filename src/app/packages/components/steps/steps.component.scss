@@ -1,0 +1,69 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.container {
+    margin-top: 200px;
+}
+
+.header-backgroud-img img {
+    position: absolute;
+    top: 0;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.header-logo img {
+    position: absolute;
+    z-index: 2;
+    width: 230px;
+    margin-top: -84px;
+}
+
+.btn-group button {
+    z-index: 2;
+    float: right;
+}
+
+.btn-return-website {
+    @include buttonReturn($primary-color-three);
+}
+.header-logo {
+    text-align: center;
+    margin-top: -95px;
+    margin-left: -137px;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .inner-container {
+        max-width: -webkit-fill-available;
+        margin-left: 44px;
+    }
+    .container {
+        margin-top: 0;
+    }
+    .header-backgroud-img img {
+        margin-top: 70px;
+        height: 218px;
+    }
+    .header {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .inner-container {
+        max-width: -webkit-fill-available;
+        margin-left: 44px;
+    }
+    .header-backgroud-img img {
+        height: 249px;
+    }
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .inner-container {
+        max-width: -webkit-fill-available;
+        margin-left: 44px;
+    }
+}

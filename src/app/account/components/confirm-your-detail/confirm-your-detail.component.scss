@@ -1,0 +1,10 @@
+@import '../../../../assets/styling/app.buttons.scss';
+
+.confirm-btn {
+    margin-bottom: 70px;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+.inner-container {
+    margin-top: 40px;
+}

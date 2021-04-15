@@ -1,0 +1,13 @@
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets/styling/app.buttons.scss';
+
+button {
+    border: none;
+    height: 43px !important;
+}
+
+.btn-print-report {
+    margin-left: 22px;
+    height: 43px !important;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}

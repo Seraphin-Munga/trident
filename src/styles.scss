@@ -1,0 +1,195 @@
+@import '../src/assets/styling/app.buttons.scss';
+@import '../src/assets/styling/app.colors.scss';
+@import '../src/assets/styling/app.input.scss';
+@import '../src/assets//styling/app.sizes.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+
+.ant-steps-item-icon {
+    background-color: transparent !important;
+    border-color: $primary-color-two !important;
+    padding: 20px !important;
+    margin-top: 20px;
+}
+
+.anticon-check {
+    color: $primary-color-three !important;
+}
+.ant-steps-item-title {
+    font-weight: normal !important;
+    font-size: 12px !important;
+    color: $filter-button !important;
+    padding-top: 82px !important;
+    margin-right: 50px !important;
+}
+
+.ant-steps-item-process {
+    .ant-steps-item-icon {
+        background-color: transparent !important;
+        border-color: $primary-color-one !important;
+    }
+
+    .ant-steps-icon {
+        color: $primary-color-one !important;
+    }
+
+    .ant-steps-item-title {
+        color: $primary-color-one !important;
+    }
+}
+
+.ant-btn-primary {
+    width: 190px !important;
+    height: 50px !important;
+    background-color: $primary-color-three !important;
+    border-radius: 22px !important;
+}
+
+.ant-steps-item-content {
+    margin-left: -50px !important;
+}
+
+.ant-steps-item-finish {
+    .ant-steps-item-icon {
+        background-color: $primary-color-one !important;
+        border-color: $primary-color-one !important;
+    }
+}
+
+.ant-steps-item-icon .ant-steps-icon {
+    background-color: transparent !important;
+    margin-left: -5px !important;
+    top: -6px !important;
+}
+.ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    color: $primary-color-two !important;
+}
+.ant-steps-item-title::after {
+    height: 4px !important;
+     left: 0 !important;
+     margin-left: 60px !important;
+}
+
+// .ant-steps-item-container {
+//     padding-left: 35px !important;
+// }
+
+.ant-modal-title {
+    text-align: center !important;
+}
+
+.ant-modal-body {
+    text-align: center !important;
+}
+
+.ant-modal-footer {
+    display: none !important;
+}
+
+.ant-modal-content {
+    border-radius: 22px !important;
+    border: 12px solid $primary-color-two !important;
+}
+
+.ant-modal-close-icon {
+    display: none !important;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .ant-steps-item-container {
+        padding-left: 0 !important;
+    }
+    .ant-steps-item-title {
+        margin-left: 0 !important;
+        font-size: 5px !important;
+    }
+}
+
+.btn-wrapper-payment {
+    margin: 100px 0;
+    padding-bottom: 100px;
+}
+
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after,
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+    background-color: $primary-color-one !important;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+    @include input();
+}
+
+textarea {
+    @include input();
+}
+
+select {
+    @include input();
+
+    border-width: 2px !important;
+    border-style: inset !important;
+    margin-top: 11px !important;
+    margin-bottom: 11px !important;
+}
+
+select:hover {
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+.ant-upload.ant-upload-drag {
+    position: relative;
+    width: 100% !important;
+    height: 50% !important;
+    text-align: center;
+    background: $primary-color-two !important;
+    border: 6px dashed $primary-color-four !important;
+    margin-left: -100px;
+}
+
+.has-error {
+    color: $error !important;
+}
+
+nz-card {
+    border: none !important;
+}
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+label {
+    font-weight: bold;
+    color: $primary-color-four !important;
+}
+
+.ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item:last-child .ant-steps-item-title {
+    margin-left: 6px !important;
+}
+
+/// Tabs global css
+.ant-tabs-nav-list {
+    margin: auto !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $primary-color-three !important;
+    font-weight: 500;
+}
+
+.ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar,
+.ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar,
+.ant-tabs-top > div > .ant-tabs-nav::before {
+    bottom: 0;
+    background: $primary-color-three !important;
+}
+
+.container-package {
+    margin-top: 5vw;
+}
+
+.inner-container {
+    margin-top: 210px;
+}

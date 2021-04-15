@@ -1,0 +1,29 @@
+@import '../../../../assets/styling/app.font.scss';
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets/styling/app.buttons.scss';
+
+h4 {
+    font-size: 15px;
+    font-weight: normal;
+    color: $primary-color-four;
+}
+
+.btn-primary-payment {
+    margin-bottom: 150px;
+    width: 182px;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+span {
+    font-size: 15px;
+    color: $primary-color-four;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.btn-wrapper {
+    text-align: center;
+    padding-top: 50px;
+}

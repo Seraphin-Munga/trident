@@ -1,0 +1,42 @@
+@import '../styling/app.colors.scss';
+
+@mixin button($colourOne, $coulorTwo, $coulorThree) {
+    border: none;
+    font-weight: bold;
+    background-color: $colourOne !important;
+    color: $coulorThree;
+    border-radius: 22px;
+    height: 43px !important;
+
+    &:hover {
+        background-color: $coulorTwo !important;
+        color: $coulorThree;
+        border: 1px solid $colourOne !important;
+    }
+}
+
+@mixin buttonPrimary($colour) {
+    width: 182px;
+    height: 43px !important;
+    border-radius: 22px;
+    background-color: $primary-color-three;
+    color: $colour;
+}
+
+@mixin buttonReturn($coulorThree) {
+    border: none;
+    font-weight: bold;
+    margin-top: -92px;
+    margin-right: 34;
+    color: $coulorThree;
+    border-radius: 22px;
+    height: 43px !important;
+}
+
+@mixin btn-upload-excel {
+    border: none;
+    background-color: $primary-color-one !important;
+    color: $primary-color-three;
+    width: 346px !important;
+    margin-right: 20px;
+}

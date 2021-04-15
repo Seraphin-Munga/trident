@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 88.0.4298.0 (Mac OS 10.15.7)" package="" timestamp="2021-04-07T09:23:50" id="0" hostname="macs-MacBook-Pro.local" tests="50" errors="0" failures="0" time="1.46">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/88.0.4298.0 Safari/537.36"/>
+  </properties>
+  <testcase name="ArrowLisenceBackComponent should create" time="0.079" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ArrowLisenceBackComponent"/>
+  <testcase name="ConfirmationPackageComponent should create" time="0.045" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ConfirmationPackageComponent"/>
+  <testcase name="InstitutionInformationComponent should create" time="0.124" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).InstitutionInformationComponent"/>
+  <testcase name="ReportTableComponent should create" time="0.038" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ReportTableComponent"/>
+  <testcase name="UserManagementTeachersComponent should create" time="0.033" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).UserManagementTeachersComponent"/>
+  <testcase name="LicensesComponent should create" time="0.014" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).LicensesComponent"/>
+  <testcase name="ReportsComponent should create" time="0.054" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ReportsComponent"/>
+  <testcase name="ArrowBackComponent should create" time="0.012" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ArrowBackComponent"/>
+  <testcase name="SiteLayoutComponent should create" time="0.033" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).SiteLayoutComponent"/>
+  <testcase name="FormControlErrorComponent should create" time="0.018" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).FormControlErrorComponent"/>
+  <testcase name="SelectPackagesComponent should create" time="0.027" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).SelectPackagesComponent"/>
+  <testcase name="AuthJwtService should be created" time="0.005" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).AuthJwtService"/>
+  <testcase name="ArrowBackComponent should create" time="0.009" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ArrowBackComponent"/>
+  <testcase name="OrdersumaryComponent should create" time="0.023" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).OrdersumaryComponent"/>
+  <testcase name="PackagePaymentInformationComponent should create" time="0.029" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).PackagePaymentInformationComponent"/>
+  <testcase name="HomeRedirect.Guard should create an instance" time="0.002" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).HomeRedirect.Guard"/>
+  <testcase name="SearchComponent should create" time="0.013" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).SearchComponent"/>
+  <testcase name="FooterComponent should create" time="0.031" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).FooterComponent"/>
+  <testcase name="AuthenticationResourceService should be created" time="0.006" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).AuthenticationResourceService"/>
+  <testcase name="AddNewStudentComponent should create" time="0.047" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).AddNewStudentComponent"/>
+  <testcase name="HeaderComponent should create" time="0.019" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).HeaderComponent"/>
+  <testcase name="StepsComponent should create" time="0.014" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).StepsComponent"/>
+  <testcase name="UploadNewStudentComponent should create" time="0.016" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).UploadNewStudentComponent"/>
+  <testcase name="StudentResourceService should be created" time="0.003" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).StudentResourceService"/>
+  <testcase name="ConfirmYourDetailComponent should create" time="0.039" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ConfirmYourDetailComponent"/>
+  <testcase name="AccountResourceService should be created" time="0.005" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).AccountResourceService"/>
+  <testcase name="UserManagementStudentsComponent should create" time="0.013" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).UserManagementStudentsComponent"/>
+  <testcase name="LandingUserViewComponent should create" time="0.014" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).LandingUserViewComponent"/>
+  <testcase name="TeacherResourceService should be created" time="0.004" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).TeacherResourceService"/>
+  <testcase name="TeacherProfileComponent should create" time="0.036" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).TeacherProfileComponent"/>
+  <testcase name="ArrowBackComponent should create" time="0.009" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ArrowBackComponent"/>
+  <testcase name="AppComponent should create the app" time="0.01" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).AppComponent"/>
+  <testcase name="AppComponent should render title" time="0.006" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).AppComponent"/>
+  <testcase name="InviteUserResourceService should be created" time="0.003" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).InviteUserResourceService"/>
+  <testcase name="DashboardLayoutComponent should create" time="0.024" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).DashboardLayoutComponent"/>
+  <testcase name="ReportSummaryComponent should create" time="0.018" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ReportSummaryComponent"/>
+  <testcase name="AccountantTableComponent should create" time="0.015" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).AccountantTableComponent"/>
+  <testcase name="SubscriptionComponent should create" time="0.051" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).SubscriptionComponent"/>
+  <testcase name="SearchLayoutComponent should create" time="0.011" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).SearchLayoutComponent"/>
+  <testcase name="UserManagementTeacherTableComponent should create" time="0.02" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).UserManagementTeacherTableComponent"/>
+  <testcase name="NewPasswordComponent should create" time="0.102" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).NewPasswordComponent"/>
+  <testcase name="TabsComponent should create" time="0.008" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).TabsComponent"/>
+  <testcase name="ForgotPasswordComponent should create" time="0.051" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ForgotPasswordComponent"/>
+  <testcase name="TermsAndConditionsComponent should create" time="0.062" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).TermsAndConditionsComponent"/>
+  <testcase name="ProfileComponent should create" time="0.052" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).ProfileComponent"/>
+  <testcase name="TeacherRegisterOnPlatformComponent should create" time="0.041" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).TeacherRegisterOnPlatformComponent"/>
+  <testcase name="LicenseManagemnetAccountantComponent should create" time="0.062" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).LicenseManagemnetAccountantComponent"/>
+  <testcase name="LoginComponent should create" time="0.048" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).LoginComponent"/>
+  <testcase name="AddNewUserComponent should create" time="0.051" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).AddNewUserComponent"/>
+  <testcase name="UserManagementAccountantComponent should create" time="0.011" classname="Chrome_Headless_88_0_4298_0_(Mac_OS_10_15_7).UserManagementAccountantComponent"/>
+  <system-out>
+    <![CDATA[Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR
+  DisconnectedClient disconnected from CONNECTED state (ping timeout)
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'backgroundImage' since it isn't a known property of 'app-steps'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'backgroundImage' since it isn't a known property of 'app-steps'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzXs' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzLg' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-card' is not a known element:
+1. If 'nz-card' is an Angular component, then verify that it is part of this module.
+2. If 'nz-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzScroll' since it isn't a known property of 'nz-table'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-modal' is not a known element:
+1. If 'nz-modal' is an Angular component, then verify that it is part of this module.
+2. If 'nz-modal' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzVisible' since it isn't a known property of 'nz-modal'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-arrow-back' is not a known element:
+1. If 'app-arrow-back' is an Angular component, then verify that it is part of this module.
+2. If 'app-arrow-back' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-report-summary' is not a known element:
+1. If 'app-report-summary' is an Angular component, then verify that it is part of this module.
+2. If 'app-report-summary' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-report-table' is not a known element:
+1. If 'app-report-table' is an Angular component, then verify that it is part of this module.
+2. If 'app-report-table' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzGutter' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'backgroundImage' since it isn't a known property of 'app-steps'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'backgroundImage' since it isn't a known property of 'app-steps'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzSpan' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzSpan' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzSpan' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzSpan' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) LOG: undefined
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-modal' is not a known element:
+1. If 'nz-modal' is an Angular component, then verify that it is part of this module.
+2. If 'nz-modal' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzVisible' since it isn't a known property of 'nz-modal'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzCollapsedWidth' since it isn't a known property of 'nz-sider'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-card' is not a known element:
+1. If 'nz-card' is an Angular component, then verify that it is part of this module.
+2. If 'nz-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzScroll' since it isn't a known property of 'nz-table'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-card' is not a known element:
+1. If 'nz-card' is an Angular component, then verify that it is part of this module.
+2. If 'nz-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-label' is not a known element:
+1. If 'nz-form-label' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-label' is not a known element:
+1. If 'nz-form-label' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-switch' is not a known element:
+1. If 'nz-switch' is an Angular component, then verify that it is part of this module.
+2. If 'nz-switch' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-card' is not a known element:
+1. If 'nz-card' is an Angular component, then verify that it is part of this module.
+2. If 'nz-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-label' is not a known element:
+1. If 'nz-form-label' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-card' is not a known element:
+1. If 'nz-card' is an Angular component, then verify that it is part of this module.
+2. If 'nz-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-table' is not a known element:
+1. If 'nz-table' is an Angular component, then verify that it is part of this module.
+2. If 'nz-table' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzType' since it isn't a known property of 'button'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzType' since it isn't a known property of 'button'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzData' since it isn't a known property of 'nz-table'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzSelections' since it isn't a known property of 'th'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzChecked' since it isn't a known property of 'th'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzIndeterminate' since it isn't a known property of 'th'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzScroll' since it isn't a known property of 'nz-table'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-tabset' is not a known element:
+1. If 'nz-tabset' is an Angular component, then verify that it is part of this module.
+2. If 'nz-tabset' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-tab' is not a known element:
+1. If 'nz-tab' is an Angular component, then verify that it is part of this module.
+2. If 'nz-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-profile' is not a known element:
+1. If 'app-profile' is an Angular component, then verify that it is part of this module.
+2. If 'app-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-tab' is not a known element:
+1. If 'nz-tab' is an Angular component, then verify that it is part of this module.
+2. If 'nz-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-subscription' is not a known element:
+1. If 'app-subscription' is an Angular component, then verify that it is part of this module.
+2. If 'app-subscription' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-card' is not a known element:
+1. If 'nz-card' is an Angular component, then verify that it is part of this module.
+2. If 'nz-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-table' is not a known element:
+1. If 'nz-table' is an Angular component, then verify that it is part of this module.
+2. If 'nz-table' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzSpan' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzType' since it isn't a known property of 'button'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzType' since it isn't a known property of 'button'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzScroll' since it isn't a known property of 'nz-table'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzData' since it isn't a known property of 'nz-table'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzSelections' since it isn't a known property of 'th'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzChecked' since it isn't a known property of 'th'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzIndeterminate' since it isn't a known property of 'th'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-arrow-back' is not a known element:
+1. If 'app-arrow-back' is an Angular component, then verify that it is part of this module.
+2. If 'app-arrow-back' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-label' is not a known element:
+1. If 'nz-form-label' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-form-control-error' is not a known element:
+1. If 'app-form-control-error' is an Angular component, then verify that it is part of this module.
+2. If 'app-form-control-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-label' is not a known element:
+1. If 'nz-form-label' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-form-control-error' is not a known element:
+1. If 'app-form-control-error' is an Angular component, then verify that it is part of this module.
+2. If 'app-form-control-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-label' is not a known element:
+1. If 'nz-form-label' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-form-control-error' is not a known element:
+1. If 'app-form-control-error' is an Angular component, then verify that it is part of this module.
+2. If 'app-form-control-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-label' is not a known element:
+1. If 'nz-form-label' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-form-control-error' is not a known element:
+1. If 'app-form-control-error' is an Angular component, then verify that it is part of this module.
+2. If 'app-form-control-error' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-item' is not a known element:
+1. If 'nz-form-item' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''nz-form-control' is not a known element:
+1. If 'nz-form-control' is an Angular component, then verify that it is part of this module.
+2. If 'nz-form-control' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'routerLink' since it isn't a known property of 'app-arrow-back'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzXs' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzLg' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'control' since it isn't a known property of 'app-form-control-error'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'submitting' since it isn't a known property of 'app-form-control-error'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'control' since it isn't a known property of 'app-form-control-error'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'submitting' since it isn't a known property of 'app-form-control-error'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'control' since it isn't a known property of 'app-form-control-error'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'submitting' since it isn't a known property of 'app-form-control-error'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'control' since it isn't a known property of 'app-form-control-error'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'submitting' since it isn't a known property of 'app-form-control-error'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzType' since it isn't a known property of 'button'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: ''app-accountant-table' is not a known element:
+1. If 'app-accountant-table' is an Angular component, then verify that it is part of this module.
+2. If 'app-accountant-table' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzSpan' since it isn't a known property of 'div'.'
+,Chrome Headless 88.0.4298.0 (Mac OS 10.15.7) ERROR: 'Can't bind to 'nzType' since it isn't a known property of 'button'.'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

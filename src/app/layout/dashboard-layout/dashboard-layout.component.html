@@ -1,0 +1,46 @@
+<nz-layout>
+  
+  <nz-sider nzCollapsible nzBreakpoint="lg" [nzCollapsedWidth]="0">>
+    <div class="vertical-line"></div>
+     <div nz-row>
+        <div class="avatar" >
+          <img   src="../../../assets/icons/User.svg" class="user-icon-logo"/>
+           <p   class="profile-name" routerLink="/profile/user-profile">{{fullName}} {{userType}}</p>
+        </div>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item > 
+        <span routerLinkActive="active" routerLink="/dashboard/landing-view">User Management</span>
+      </li>
+      <li nz-menu-item >
+        <span routerLinkActive="active" routerLink="/dashboard/licenses">Licenses</span>
+      </li>
+
+      <li nz-menu-item *appHasAnyAuthority="[Role.ACCOUNTANT]"> 
+        <span routerLinkActive="active" routerLink="/accountant/user-management-accountant">User Management</span>
+      </li>
+      <li nz-menu-item *appHasAnyAuthority="[Role.ACCOUNTANT]">
+        <span routerLinkActive="active" routerLink="/accountant/license-management-accountant">Licenses Management</span>
+      </li>
+
+      <li nz-menu-item *appHasAnyAuthority="[Role.ACCOUNTANT]">
+        <span routerLinkActive="active" routerLink="/report/reports">Reports</span>
+      </li>
+    </ul> 
+  </nz-sider>
+  <nz-layout class="right-layout">
+    <nz-header>
+
+      <div class="profile-menu">
+        <span routerLink="/search/search">Search Portal</span>
+        <strong>Management</strong>
+        <img src="../../../assets/icons/Line.svg" />
+        <img  class="trident-logo" src="../../../assets/logos/search.png" alt="">
+        <img  class="britannica-logo" src="../../../assets/imgs/Britannica.png" alt="">
+      </div>
+    </nz-header>
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

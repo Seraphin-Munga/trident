@@ -1,0 +1,64 @@
+<div nz-row nzJustify="space-around" nzAlign="middle" class="container">
+  <nz-card nz-col [nzXs]="{ span: 8}" [nzLg]="{ span: 8}">
+    <h1>Register</h1>
+    <form nz-form [formGroup]="form">
+      <div nz-row>
+        <div nz-col nzSpan="24">
+          <nz-form-item>
+            <nz-form-control nzErrorTip="Please input your username!">
+              <nz-form-label nzFor="Name">Name</nz-form-label>
+              <input type="text" formControlName="name" class="register-input" placeholder="Name" />
+              <app-form-control-error [control]="form.get('name')" [submitting]="saving" label="Name">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control nzErrorTip="Please input your Password!">
+              <nz-form-label nzFor="surname">Surname</nz-form-label>
+              <input type="text" formControlName="surname" class="register-input" placeholder="Surname" />
+              <app-form-control-error [control]="form.get('surname')" [submitting]="saving" label="Surname">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control nzErrorTip="Please input your Password!">
+              <nz-form-label nzFor="idNo">Identity Number</nz-form-label>
+              <input type="number" formControlName="identityNumber" class="register-input"
+                placeholder="Identity Number" />
+              <app-form-control-error [control]="form.get('identityNumber')" [submitting]="saving"
+                label="Identity Number">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control nzErrorTip="Name of Institution!">
+              <nz-form-label nzFor="Grade">Grade</nz-form-label>
+              <select name="" id="" class="register-input" formControlName="grade">
+                <option></option>
+              </select>
+              <app-form-control-error [control]="form.get('grade')" [submitting]="saving" label="Gade">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control nzErrorTip="Please input your Password!">
+              <nz-form-label nzFor="password">password</nz-form-label>
+              <input type="password" formControlName="password" class="register-input" placeholder="Password" />
+              <app-form-control-error [control]="form.get('password')" [submitting]="saving" label="Password">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+      </div>
+      <div nz-col>
+        <nz-form-item>
+          <nz-form-control>
+            <button nz-button (click)="register()" class="btn-register">REGISTER</button>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </form>
+  </nz-card>
+</div>
+
+

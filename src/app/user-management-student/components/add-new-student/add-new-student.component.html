@@ -1,0 +1,84 @@
+<app-arrow-back [title]="'Students'" [routerLink]="'/dashboard/user-management-students'"></app-arrow-back>
+<div nz-row nzJustify="space-around" nzAlign="middle" nzType="flex" class="container">
+  <div nz-col [nzXs]="{ span: 20}" [nzLg]="{ span: 24}" class="inner-container">
+    <h1>Add new student</h1>
+    <form nz-form [formGroup]="form">
+      <div nz-row>
+        <div nz-col nzSpan="10">
+          <nz-form-item>
+            <nz-form-control >
+              <nz-form-label nzFor="emailAddress">Full Name</nz-form-label>
+              <input type="text" formControlName="fullName" class="student-input" placeholder="Full Name" />
+              <app-form-control-error [control]="form.get('fullName')" [submitting]="saving" label="Full Name">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control >
+              <nz-form-label nzFor="Student Number">Student Number</nz-form-label>
+              <input type="text" formControlName="studentNumber" class="student-input" placeholder="Student Number" />
+              <app-form-control-error [control]="form.get('studentNumber')" [submitting]="saving" label="Student Number">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control >
+              <nz-form-label nzFor="Identity Number">Identity Number</nz-form-label>
+              <input type="text" formControlName="identityNumber" class="student-input" placeholder="Identity Number" />
+              <app-form-control-error [control]="form.get('identityNumber')" [submitting]="saving"
+                label="Identity Number">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control >
+              <nz-form-label nzFor="Teacher">Teacher</nz-form-label>
+              <select name="" id="" class="student-input" formControlName="teacher">
+                <option></option>
+              </select>
+              <app-form-control-error [control]="form.get('teacher')" [submitting]="saving" label="Teacher">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+        <div nz-col nzSpan="10" nzOffset="3">
+          <nz-form-item>
+            <nz-form-control >
+              <nz-form-label nzFor="emailAddress">Email Address</nz-form-label>
+              <input type="text" formControlName="emailAddess" class="student-input" placeholder="Email Address" />
+              <app-form-control-error [control]="form.get('emailAddess')" [submitting]="saving" label="Email Address">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control >
+              <nz-form-label nzFor="Grade">Gender</nz-form-label>
+              <select name="" id="" class="student-input" formControlName="gender">
+                <option></option>
+              </select>
+              <app-form-control-error [control]="form.get('gender')" [submitting]="saving" label="Gender">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control >
+              <nz-form-label nzFor="Grade">Grade</nz-form-label>
+              <select name="" id="" class="student-input" formControlName="grade">
+                <option></option>
+              </select>
+              <app-form-control-error [control]="form.get('grade')" [submitting]="saving" label="Grade">
+              </app-form-control-error>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+      </div>
+      <div nz-col>
+        <nz-form-item>
+          <nz-form-control>
+            <button nz-button class="btn-submit" (click)="submit()" [nzType]="'primary'">SUBMIT</button>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </form>
+  </div>
+  </div>

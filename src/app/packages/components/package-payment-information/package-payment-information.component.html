@@ -1,0 +1,119 @@
+<app-steps [backgroundImage]="'../../../../assets/header-imgs/Mask Group 6.png'" [current]="2"></app-steps>
+<div nzJustify="space-around" nzAlign="middle" nzType="flex" class="container-package">
+  <div nz-col nzSpan="20" nzOffset="3">
+    <div nz-row>
+      <div class="second-form-title">
+        <h1>Confirmation Information</h1>
+        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+          labore et
+          dolore magna aliquyam erat, sed diam voluptua.</h4>
+      </div>
+      <div nz-col nzSpan="8" nzOffset="15">
+        <app-ordersummary></app-ordersummary>
+      </div>
+    </div>
+    <div nz-row>
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="2">
+              <h2>Institution Information</h2>
+            </th>
+          </tr>
+        </thead>
+        <tbody *ngIf="institution" class="payment-informations">
+          <tr>
+            <td>Name of Institution:</td>
+            <td class="institution-name">{{institution.nameOfInstitution}}</td>
+          </tr>
+          <tr>
+            <td>Reg No.:</td>
+            <td class="institution-name">{{institution.regNo}}</td>
+          </tr>
+          <tr>
+            <td>Institution type:</td>
+            <td class="institution-name">{{institution.institutionType}}</td>
+          </tr>
+          <tr>
+            <td>Physical
+              Address:</td>
+            <td class="institution-name">{{institution.companyPhysicalAddress.streetAddress}}</td>
+          </tr>
+          <tr>
+            <th>Postal Address:</th>
+            <td class="institution-name">{{institution.companyPostalAddress.shpStreetAddress}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div nz-row>
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="2">
+              <h2>Contact Information</h2>
+            </th>
+          </tr>
+        </thead>
+        <tbody *ngIf="institution" class="payment-informations">
+          <tr>
+            <td>Contact Person:</td>
+            <td class="institution-name">{{institution.companyContact.contactPerson}}</td>
+          </tr>
+          <tr>
+            <td>Email Address:</td>
+            <td class="institution-name">{{institution.companyContact.contactEmailAddress}}</td>
+          </tr>
+          <tr>
+            <td>Landline No.:</td>
+            <td class="institution-name">{{institution.companyContact.contactLandlineNumber}}</td>
+          </tr>
+          <tr>
+            <th>Mobile Number.:</th>
+            <td class="institution-name">{{institution.companyContact.contactMobileNumber}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div nz-row>
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="2">
+              <h2>Super Admin Information</h2>
+            </th>
+          </tr>
+        </thead>
+        <tbody *ngIf="institution" class="payment-informations">
+          <tr>
+            <td>Super Admin 1 Email Address:</td>
+            <td class="institution-name"> {{institution.superAdminOneEmailAddress}}</td>
+          </tr>
+          <tr>
+            <td>Super Admin 2 Email Address:</td>
+            <td class="institution-name">{{institution.superAdminTwoEmailAddress}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div nz-row class="btn-wrapper-payment">
+      <div nz-col >
+        <nz-form-item>
+          <nz-form-control>
+            <button nz-button routerLink="/package/institution-information" class="btn-default-payment">BACK</button>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div nz-col>
+        <nz-form-item>
+          <nz-form-control>
+            <button nz-button  (click)="pay()" class="btn-primary-payment">PAY</button>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </div>
+</div>
+
+ 

@@ -1,0 +1,8 @@
+@import '../../../../assets/styling/app.buttons.scss';
+
+.btn-register {
+    width: 182px;
+    float: right !important;
+    margin-bottom: 150px;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}

@@ -1,0 +1,23 @@
+<div class="header">
+  <div class="btn-group">
+    <button nz-button class="btn-return-website">RETURN TO WEBSITE</button>
+  </div>
+  <div class="header-logo">
+    <img src="../../../../assets/header-imgs/Image 2.png" alt="">
+  </div>
+  <div class="header-backgroud-img">
+    <img [src]="backgroundImage" alt="">
+  </div>
+  <div nz-row nzJustify="space-around" nzAlign="middle" nzType="flex" class="container">
+    <div nz-col [nzXs]="{ span: 12}" [nzLg]="{ span: 18}" class="inner-container">
+      <nz-steps [nzCurrent]="current">
+        <nz-step nzTitle="Select Package"></nz-step>
+        <nz-step nzTitle="Institution Information"></nz-step>
+        <nz-step nzTitle="Confirmation"></nz-step>
+        <nz-step nzTitle="Payment"></nz-step>
+        <nz-step nzTitle="Done"></nz-step>
+      </nz-steps>
+    </div>
+  </div>
+</div>
+

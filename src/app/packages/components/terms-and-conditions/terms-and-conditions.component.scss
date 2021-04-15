@@ -1,0 +1,27 @@
+@import '../../../../assets/styling/app.font.scss';
+@import '../../../../assets/styling/app.colors.scss';
+@import '../../../../assets/styling/app.buttons.scss';
+
+.btn-wrapper {
+    margin: 100px 750;
+    padding-bottom: 100px;
+}
+
+.btn-default-payment {
+    width: 200px;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+li {
+    font-weight: bold;
+    margin-left: -24px;
+    padding-top: 20px;
+}
+
+a {
+    display: none;
+}

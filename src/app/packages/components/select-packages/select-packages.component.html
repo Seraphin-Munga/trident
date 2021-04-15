@@ -1,0 +1,51 @@
+<app-steps [backgroundImage]="'../../../../assets/header-imgs/Mask Group 4.png'" [current]="0"></app-steps>
+<div nz-row nzJustify="space-around" nzAlign="middle" nzType="flex" class="container-package">
+  <div nz-col [nzXs]="{ span: 6}" [nzLg]="{ span: 20}" class="inner-container">
+    <h1>Select Packages</h1>
+    <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+      dolore magna aliquyam erat, sed diam voluptua.</h3>
+    <nz-table #colSpanTable nzBordered [nzData]="listOfData" [nzFrontPagination]="false">
+      <thead>
+        <tr>
+          <th class="table-header" colspan="4">
+            <h1>Trident EduTech Web Application</h1>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Product per Institution
+          </th>
+          <th>
+            Range per Institution
+          </th>
+          <th colspan="1" scope="colgroup">
+            Annual Pricing per Institution
+          </th>
+          <th>
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let data of listOfData">
+        <tr>
+          <td rowspan="10" scope="rowgroup">{{data.productPerInstitution}}</td>
+        </tr>
+        <tr *ngFor="let range of data.rangePerInstitutions">
+          <td scope="row">{{range.description}}</td>
+          <td class="price">R{{range.price}}</td>
+          <td><button nz-button (click)="goNext(range.code,range.price)" class="btn-select">PURCHASE</button></td>
+        </tr>
+      </tbody>
+    </nz-table>
+    <div class="container-summary">
+      <h5>Note:</h5>
+      <div class="inner-summary">
+        <ol>
+          <li>All pricing indicated excludes Value Added Tax (VAT) of 15%.</li>
+          <li>All pricing may be subject to the Rate of Exchange (RoE) and will be reviewed annually</li>
+          <li>The number of schools may be reviewed to meet the business requirements of Trident Digital Enterprise
+            (PTY) LTD.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>

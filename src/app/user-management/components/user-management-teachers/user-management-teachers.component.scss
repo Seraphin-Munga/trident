@@ -1,0 +1,50 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets/styling/app.sizes.scss';
+
+.invite-box {
+    border-radius: 10px;
+    background-color: $primary-color-two;
+    margin-top: 100px;
+    padding: 20px;
+    padding-bottom: 61px;
+    max-width: 700px;
+    padding-top: 70px !important;
+}
+
+span {
+    color: $primary-color-four;
+    font-size: 10px;
+}
+
+.invite-form-button {
+    float: right;
+}
+
+.description {
+    color: $error;
+}
+
+p {
+    color: $primary-color-four;
+}
+
+button {
+    border: none;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+.btn-upload-excel {
+    @include btn-upload-excel();
+}
+
+.btn-group {
+    float: right;
+    padding-top: 20px;
+    padding-top: 86px;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .invite-box {
+        width: 340px;
+        margin-left: -255px;
+    }
+}

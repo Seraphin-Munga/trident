@@ -1,0 +1,73 @@
+<div nzJustify="space-around" nzAlign="middle" nzType="flex" class="container">
+    <nz-card>
+        <h1>Package Information</h1>
+        <nz-form-label nzFor="Package">Package</nz-form-label>
+        <div nz-row>
+            <span>
+                License Packages 500 Pupils Annual Plan, paid annually Package ends on Jul 22, 2021
+            </span>
+        </div>
+        <div nz-row>
+            <nz-form-label nzFor="Package">Automatically renew package</nz-form-label>
+        </div>
+        <div nz-row>
+            <nz-switch></nz-switch>
+        </div>
+        <div nz-row class="btn-group">
+            <div nz-col>
+                <strong>CANCEL PLAN</strong>
+            </div>
+            <div nz-col nzSpan="6">
+                <nz-form-item>
+                    <nz-form-control>
+                        <button nz-button class="btn-submit" (click)="renew()" [nzType]="'primary'">RENEW PACKAGE</button>
+                    </nz-form-control>
+                </nz-form-item>
+            </div>
+        </div>
+    </nz-card>
+
+    <nz-card>
+        <h1>Payment Information</h1>
+        <nz-form-label nzFor="Package"> R 0,00/Annually</nz-form-label>
+        <div nz-row>
+            <span>
+                Next payment is scheduled for Jul 22, 2020 Visa ending ****0933
+            </span>
+        </div>
+        <div nz-row class="btn-group">
+            <nz-form-item>
+                <nz-form-control>
+                    <button nz-button class="btn-manage-payment" (click)="manage()" [nzType]="'primary'">MANAGE PAYMENT</button>
+                </nz-form-control>
+            </nz-form-item>
+        </div>
+    </nz-card>
+
+    <nz-card class="billing">
+        <h1>Billing History</h1>
+         <nz-table #rowSelectionTable nzShowSizeChanger [nzData]="listOfData"
+        (nzCurrentPageDataChange)="onCurrentPageDataChange($event)">
+        <thead>
+          <tr>
+            <th [nzSelections]="listOfSelection" [(nzChecked)]="checked" [nzIndeterminate]="indeterminate"
+              (nzCheckedChange)="onAllChecked($event)"></th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of rowSelectionTable.data">
+            <td [nzChecked]="setOfCheckedId.has(data.id)" (nzCheckedChange)="onItemChecked(data.id, $event)"></td>
+            <td>{{ data.date }}</td>
+            <td>{{ data.type }}</td>
+            <td>{{ data.amount }}</td>
+            <td> <button (click)="view()"  class="btn-view" nz-button
+                [nzType]="'primary'">View</button></td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </nz-card>
+</div>

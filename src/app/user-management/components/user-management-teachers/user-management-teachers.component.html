@@ -1,0 +1,30 @@
+<app-arrow-back [title]="'Teachers'"  [routerLink]="'/dashboard/landing-view'"></app-arrow-back>
+<div class="invite-box">
+  <form nz-form [formGroup]="form">
+    <span>Invite a new user</span>
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input your email address!">
+        <nz-form-label nzFor="email">Email Address</nz-form-label>
+        <input type="text" formControlName="emailAddress" placeholder="Email Address" />
+        <app-form-control-error [control]="form.get('emailAddress')" [submitting]="saving" label="Email Address">
+        </app-form-control-error>
+      </nz-form-control>
+    </nz-form-item>
+    <button nz-button class="invite-form-button"
+      [nzType]="'primary'"(click)="submit()" >SUBMIT</button>
+  </form>
+</div>
+
+<div class="btn-group">
+  <button nz-button [nzType]="'primary'" (click)="excel()" class="btn-upload-excel">UPLOAD EXCEL SPREAD SHEET</button>
+</div>
+<nz-modal [(nzVisible)]="isVisible" nzTitle="Notification">
+  <ng-container *nzModalContent>
+    <p>Please be advised that editing this template will result to the data not being upload corretly</p>
+    <p>When uploading the list, make sure it has the flowing information</p>
+    <p class="description">Identity Number, Full Name, Email Address and Grade</p>
+    <button nz-button [nzType]="'primary'" (click)='handleOk()' class="btn-ok">OK</button>
+  </ng-container>
+</nz-modal>
+<app-user-management-teacher-table></app-user-management-teacher-table>
+

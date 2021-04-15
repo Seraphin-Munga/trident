@@ -1,0 +1,59 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.container {
+    max-width: 1700px;
+    width: 100%;
+    height: 941px;
+    margin-top: 5%;
+    background-color: $primary-color-two;
+    padding-left: 180px;
+    padding-top: 80px;
+}
+
+.ant-upload-hint,
+span {
+    padding-top: 40px;
+    font-size: 36px !important;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.uploaded-file {
+    max-width: 700px;
+    margin-top: 50px;
+}
+
+.progress-bar {
+    margin-right: 50px;
+}
+
+h1 {
+    margin-left: -103px;
+}
+
+img {
+    position: relative;
+    margin-left: -85px;
+    margin-bottom: -37px;
+}
+button {
+    border: none;
+    float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .container {
+        width: 347px !important;
+        margin-left: -245px;
+    }
+
+    .uploaded-file {
+        margin-top: 100px;
+    }
+
+    button {
+        margin-top: 40px;
+    }
+}

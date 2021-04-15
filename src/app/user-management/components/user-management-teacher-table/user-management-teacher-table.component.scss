@@ -1,0 +1,50 @@
+@import '../../../../assets/styling/app.buttons.scss';
+@import '../../../../assets//styling/app.sizes.scss';
+
+.btn-user-view {
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+.btn-group-filter button {
+    border: none !important;
+    float: right;
+    background-color: $filter-button !important;
+    color: $primary-color-four;
+}
+
+td {
+    color: $primary-color-four !important;
+    font-weight: normal;
+}
+
+th {
+    color: $primary-color-four !important;
+    font-weight: normal;
+}
+
+.grade {
+    text-align: center;
+}
+
+.table-container {
+    margin-top: 150px;
+}
+
+.btn-view {
+    width: 100% !important;
+    border: none !important;
+    @include button($primary-color-one, $primary-color-two, $primary-color-three);
+}
+
+@media (max-width: $phone-landscape-breakpoint) {
+    .table-container {
+        margin-left: -263px;
+    }
+
+    .btn-group-filter button {
+        width: 100px !important;
+    }
+    .btn-group-filter {
+        margin-left: 5px;
+    }
+}
